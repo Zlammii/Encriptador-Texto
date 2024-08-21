@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo">Encriptador de texto</h1>
+    </header>
+
+    <main>
+        <div class="contenedorEncriptado">
+            <textarea id="encriptado" placeholder="Ingrese el texto..."></textarea>
+            <p class="mensajeError" id="error"></p>
+
+            <div class="contenedorBotones">
+                <button onclick="encriptarTexto()" class="botonEncriptar">Encriptar</button>
+                <button onclick="desencriptarTexto()" class="botonDesencriptar">Desencriptar</button>
+            </div>
+        </div>
+
+        <div class="contenedorDesencriptado">
+            <textarea id="desencriptado" placeholder="Texto encriptado..."></textarea>
+
+            <div class="contenedorBotones">
+                <button onclick="limpiar()" class="botonLimpiar">Limpiar</button>
+                <button onclick="copiar()" class="botonCopiar">Copiar</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Desarrollado por Richard Montoya Gómez para el programa One.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
